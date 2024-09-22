@@ -1,0 +1,82 @@
+/* AdminDashboard.css */
+.admin-dashboard-background {
+  /* background-image: url('https://img.freepik.com/free-vector/gradient-minimalist-background_23-2149976755.jpg?ga=GA1.1.1284379022.1726814244&semt=ais_hybrid'); */
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* Full height to cover the viewport */
+}
+
+.dashboard-container {
+  max-width: 400px;
+  margin: 20px;
+  padding: 20px;
+  background-color: rgba(240, 244, 255, 0.9); /* Semi-transparent background */
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+  text-align: center;
+  color: #333;
+}
+
+.user-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+.select-field{
+  width: 93%;
+}
+.input-field, .select-field {
+  width: 85%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  transition: border-color 0.3s, background-color 0.3s;
+  font-size: 14px;
+}
+
+.input-field:focus, .select-field:focus {
+  border-color: #007bff;
+  outline: none;
+  background-color: #e6f7ff;
+}
+
+.submit-button {
+  padding: 8px;
+  background-color: #007bff;
+  color: #ffffff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: background-color 0.3s, transform 0.2s, box-shadow 0.3s;
+}
+
+.submit-button:hover {
+  background-color: #0056b3;
+  animation: pulse 0.5s ease-in-out infinite alternate;
+  transform: scale(1.05);
+}
+
+.message {
+  text-align: center;
+  color: #333;
+  margin-top: 15px;
+}
+
+@keyframes pulse {
+  0% {
+    box-shadow: 0 0 0 rgba(0, 123, 255, 0.5);
+  }
+  100% {
+    box-shadow: 0 0 10px rgba(0, 123, 255, 0.5);
+  }
+}

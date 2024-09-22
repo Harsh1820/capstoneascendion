@@ -1,0 +1,117 @@
+/* Wrapper to arrange image and form side by side */
+.file-upload-otp-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+  height: 100vh;
+}
+
+/* Styling for the image section */
+.image-section {
+  flex: 1;
+  padding-right: 20px;
+}
+
+.image-section img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Styling for the form section */
+.file-upload-otp-container {
+  flex: 1;
+  background-color: rgba(255, 255, 255, 0.9);
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  max-width: 500px;
+}
+
+.title {
+  text-align: center;
+  color: #333;
+  font-weight: bold;
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.form-container {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.file-input-wrapper {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 16px;
+}
+
+.file-input {
+  padding: 8px;
+  font-size: 14px;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+  transition: border 0.3s ease;
+}
+
+.file-input:hover, .file-input:focus {
+  border-color: #3f51b5;
+}
+
+.input-field {
+  border-radius: 4px;
+  padding: 10px;
+  font-size: 14px;
+  transition: box-shadow 0.3s ease;
+}
+
+.input-field:hover, .input-field:focus {
+  box-shadow: 0 0 8px rgba(63, 81, 181, 0.2);
+}
+
+.submit-button, .otp-button {
+  background-color: #3f51b5;
+  color: white;
+  padding: 10px 20px;
+  font-size: 14px;
+  border-radius: 4px;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.submit-button:hover, .otp-button:hover {
+  background-color: #283593;
+  box-shadow: 0 4px 12px rgba(63, 81, 181, 0.4);
+}
+
+.status-message {
+  text-align: center;
+  font-size: 14px;
+  color: #d32f2f;
+}
+
+.loading-spinner {
+  display: block;
+  margin: 0 auto;
+}
+
+@media (max-width: 768px) {
+  .file-upload-otp-wrapper {
+    flex-direction: column;
+    padding: 10px;
+  }
+
+  .image-section {
+    padding-right: 0;
+    margin-bottom: 20px;
+  }
+
+  .file-upload-otp-container {
+    max-width: 100%;
+  }
+}

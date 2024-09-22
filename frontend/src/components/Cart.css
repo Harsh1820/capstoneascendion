@@ -1,0 +1,60 @@
+/* Cart.css */
+
+.cart-container {
+  margin: 20px;
+  padding: 20px;
+  background-color: #f5f5f5; /* Light background color */
+}
+
+.cart-title {
+  text-align: center;
+  margin-bottom: 30px;
+  font-weight: bold;
+  color: #333;
+}
+
+.cart-item {
+  background-color: #fff; /* White card background */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Soft shadow */
+  border-radius: 8px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.cart-item:hover {
+  transform: translateY(-5px); /* Lift effect on hover */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.item-name {
+  color: #007bff;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.item-description {
+  color: #666;
+  font-size: 14px;
+  margin-bottom: 15px;
+}
+
+.item-price {
+  color: #333;
+  font-weight: bold;
+}
+
+.checkout-button {
+  display: block;
+  margin: 30px auto;
+  padding: 10px 20px;
+  background-color: #007bff; /* Primary color */
+  color: #fff;
+  font-size: 16px;
+  font-weight: bold;
+  border-radius: 5px;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.checkout-button:hover {
+  background-color: #0056b3; /* Darker blue on hover */
+  box-shadow: 0 6px 12px rgba(0, 123, 255, 0.3); /* Soft shadow on hover */
+}
